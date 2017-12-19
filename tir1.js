@@ -1,105 +1,3 @@
-//  var boxContainer = document.getElementById('boxContainer');
-// // var box, raw, i = 1, z = 1;
-
-// // // ключевой момент здесь. Пока внутри родителя есть элементы с классом .box (родитель
-// // // в данном случае - body, но у вас может быть любой), то выполняем тело цикла.
-// // while (box = document.querySelector(".row > .col-box")) {
-// // 	//box.className = "col-box";
-// //     // i - номер итерации. Инкрементируется в конце цикла. Если переваливает за 4, то начинаем
-// //     // отсчет заново (это нужно, чтобы сгруппировать элементы по 4 штуки)
-// //     if (i > 4) {
-// //         i = 1;
-// //     }
-
-// //     // если это первый заход в группе, то создаем новый div с классом raw-z
-// //     if (i === 1) {
-// //         // переопределяем raw в новый, свжесозданный div
-// //         raw = document.createElement("div");
-// //         // с классом raw-z
-// //         raw.classList.add("raw-" + z);
-        
-
-// //         // после чего z увеличиваем
-// //         z += 1;
-// //     }
-
-// //     // в созданный на "первом" проходе div с классом raw-z добавляем box'ы
-// //     raw.appendChild(box);
-
-// //     // если это последний элемент из группы, то отрисовываем всю группу элементов
-// //     if (i === 4) {
-// //         boxContainer.appendChild(raw);
-// //     }
-
-// //     // увеличиваем счетчик на 1
-// //     i += 1;
-// // }
-// var boxes = document.querySelectorAll('.col-box');
-// for (var i = 0; i < boxes.length; i++) {
-// 	if(i < boxes.length/3) {
-// 		boxes[i].classList.add('row-1');
-// 	} else if (i < (boxes.length / 3) * 2 ) {
-// 		boxes[i].classList.add('row-2');
-// 	} else if (i >= (boxes.length / 3) * 2){
-// 		boxes[i].classList.add('row-3');
-// 	}
-	
-// }
-
-// var row1 = document.getElementsByClassName("row-1");
-// var boxWidth = row1[0].getBoundingClientRect().width;
-// var rowList = [
-//             document.querySelectorAll(".row-1"),
-//             document.querySelectorAll(".row-2"), 
-//             document.querySelectorAll(".row-3"), 
-//             ];
-// var p_box = row1[0].cloneNode(true);
-// var words = {
-// 			rabbit: "ʹрэбит-кролик",
-// 			rhinoceros: "райʹнос(э)рэс-носорог",
-// 			cow: "кау-корова",
-// 			elephant: "ʹэлифэнт-слон",
-// 			horse: "хо:с-лошадь",
-// 			dog: "дог-собака",
-// 			seal: "си:л-тюлень",
-// 			pig: "пиг-свинья",
-// 			monkey: "ʹманки-обезьяна",
-// 			tiger: "ʹтайгэ-тигр",
-// 			fox: "фокс-лиса",
-// 			wolf: "вулф-волк"
-// 		};
-        
-//         var wordsEng = [],        
-//              wordsRu = [];
-//              for (engWords in words){
-//             wordsEng.push(engWords);
-//             wordsRu.push(words[engWords].split('-')[1]);
-//         }
-
-//         start.onclick = function() {
-//       var start = Date.now(); // сохранить время начала
-//       var startSpeed = 5;
-//             var timer = setInterval(function() {
-//         // вычислить сколько времени прошло из opts.duration
-//         var timePassed = Date.now() - start;
-//         var distance = timePassed/startSpeed;
-// for (var i = 0; i < rowList[0].length; i++) {
-// 	rowList[0][i].style.left = distance + 'px';
-// }
-//         //row1[0].style.left = timePassed / 5 + 'px';
-//         //rowList[0][1].style.left = timePassed / 5 + 'px';
-//         //rowList[0][2].style.left = timePassed / 5 + 'px';
-//         //rowList[0][3].style.left = timePassed / 5 + 'px';
-// if(distance >= 15) row1[0].parentNode.insertBefore(p_box, null);
-//         if (distance >= 95) clearInterval(timer);
-
-//       }, 20);
-//     }
-
-
-
-// ===================================================================
-
 var words = {
             rabbit: "ʹрэбит-кролик",
             rhinoceros: "райʹнос(э)рэс-носорог",
@@ -283,7 +181,7 @@ var levelSpeed = [4.5, 1.5, 2.5];
         var rabbitBox = [
             '<style>',
             '.box {',
-            'cursor: url(/resources/image/cursors/74.svg), pointer;',
+            'cursor: url(resources/image/cursors/74.svg), pointer;',
             '}',
             '</style>',
             '<img src="resources/image/rabit.png" alt="" class="rabit hidden-xs">',
@@ -430,7 +328,7 @@ var levelSpeed = [4.5, 1.5, 2.5];
         var rabbitBox = [
             '<style>',
             '.box {',
-            'cursor: url(/resources/image/cursors/74.svg), pointer;',
+            'cursor: url(resources/image/cursors/74.svg), pointer;',
             '}',
             '</style>',
             '<img src="resources/image/rabit.png" alt="" class="rabit hidden-xs">',
